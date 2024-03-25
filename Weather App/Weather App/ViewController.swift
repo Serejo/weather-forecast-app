@@ -114,6 +114,16 @@ class ViewController: UIViewController {
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24)
         return stackView
     }()
+    
+    private lazy var houryForecastLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor(named: "contrastColor")
+        label.text = "PREVISÃO POR HORA"
+        label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
+        label.textAlignment = .center
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -134,6 +144,7 @@ class ViewController: UIViewController {
         view.addSubview(backgroundView)
         view.addSubview(headerView)
         view.addSubview(statusStackView)
+        view.addSubview(houryForecastLabel)
         
         headerView.addSubview(cityLabel)
         headerView.addSubview(temperatureLabel)
@@ -176,6 +187,12 @@ class ViewController: UIViewController {
             statusStackView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 24),
             statusStackView.widthAnchor.constraint(equalToConstant: 206),
             statusStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            houryForecastLabel.topAnchor.constraint(equalTo: statusStackView.bottomAnchor, constant: 29),
+            houryForecastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 35),
+            houryForecastLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -35),
         ])
     }
 
