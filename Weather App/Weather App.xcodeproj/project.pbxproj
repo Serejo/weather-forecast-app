@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171BC7DE2BFD8C4C00185DDC /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171BC7DD2BFD8C4C00185DDC /* HourlyForecastCollectionViewCell.swift */; };
 		17D3F8F12AF0821A0056F889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D3F8F02AF0821A0056F889 /* AppDelegate.swift */; };
 		17D3F8F32AF0821A0056F889 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D3F8F22AF0821A0056F889 /* SceneDelegate.swift */; };
 		17D3F8F52AF0821A0056F889 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D3F8F42AF0821A0056F889 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171BC7DD2BFD8C4C00185DDC /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		17D3F8ED2AF0821A0056F889 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D3F8F02AF0821A0056F889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D3F8F22AF0821A0056F889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		17D3F8EF2AF0821A0056F889 /* Weather App */ = {
 			isa = PBXGroup;
 			children = (
+				171BC7DD2BFD8C4C00185DDC /* HourlyForecastCollectionViewCell.swift */,
 				17D3F8F02AF0821A0056F889 /* AppDelegate.swift */,
 				17D3F8F22AF0821A0056F889 /* SceneDelegate.swift */,
 				17D3F8F42AF0821A0056F889 /* ViewController.swift */,
@@ -136,6 +139,7 @@
 			files = (
 				17D3F8F52AF0821A0056F889 /* ViewController.swift in Sources */,
 				17D3F8F12AF0821A0056F889 /* AppDelegate.swift in Sources */,
+				171BC7DE2BFD8C4C00185DDC /* HourlyForecastCollectionViewCell.swift in Sources */,
 				17D3F8F32AF0821A0056F889 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
